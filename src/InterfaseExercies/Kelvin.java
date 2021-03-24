@@ -9,8 +9,8 @@ public class Kelvin implements BaseConverter{
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter temperature in celsius: ");
         int userTempInCelsius = scanner.nextInt();
-        int kelvin = 3;
-        int kelvinTemp = kelvin * userTempInCelsius;
+        double celsius = 274.15; // one celsius == 274.15 kelvin
+        double kelvinTemp = celsius + userTempInCelsius ;
         return "This is your temperature in kelvin: " + kelvinTemp;
     }
 }
