@@ -4,9 +4,9 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Square square = new Square(5);
-        Triangle triangle = new Triangle(4, 7);
-        Circle circle = new Circle(10);
+        Square square = new Square(5, "Red");
+        Triangle triangle = new Triangle(4, 7, "Blue");
+        Circle circle = new Circle(10, "Green");
 
         System.out.println(square.getPerimeter());
         System.out.println(square.getArea());

@@ -2,10 +2,10 @@ package AbstractClassExercise;
 
 public class Square extends Figura {
 
-    private String color = "Blue";
 
-    public Square(int site) {
-        super.site = site;
+    public Square(int site, String color) {
+        this.site = site;
+        this.color = color;
     }
 
     @Override
@@ -20,23 +20,6 @@ public class Square extends Figura {
        return squarePerimeter;
     }
 
-    @Override
-    public String switchColor() {
 
-        switch (color) {
-            case "Green":
-                color = "#44975c";
-                break;
-            case "Blue":
-                color = "#40c0ff";
-                break;
-            case "Red":
-                color = "#ff0000";
-                break;
-            default:
-                color = "Invalid color";
-        }
-        return color;
-    }
 
 }
