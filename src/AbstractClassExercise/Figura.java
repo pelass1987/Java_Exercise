@@ -2,17 +2,30 @@ package AbstractClassExercise;
 
 abstract class Figura {
 
-    public static final int squareSite = 5;
-    public static final int triangleSite = 6;
-    public static final int triangleHeight = 4;
-    public static final int circleRadius = 7;
-    public static final double piNumber = 3.1415;
+    public int site;
+    public String color;
 
     public abstract double getArea();
 
-    public abstract String getParameter();
+    public abstract double getPerimeter();
 
+    public String switchColor() {
 
+        switch (color) {
+            case "Green":
+                color = "#44975c";
+                break;
+            case "Blue":
+                color = "#40c0ff";
+                break;
+            case "Red":
+                color = "#ff0000";
+                break;
+            default:
+                color = "Invalid color";
+        }
+        return color;
+    }
 }
 
 
