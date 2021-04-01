@@ -4,9 +4,9 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Square square = new Square(5, "Red");
-        Triangle triangle = new Triangle(4, 7, "Blue");
-        Circle circle = new Circle(10, "Green");
+        Square square = new Square(5,Colors.GREEN );
+        Triangle triangle = new Triangle(4, 7,Colors.BLUE);
+        Circle circle = new Circle(10, Colors.RED);
 
         System.out.println(square.getPerimeter());
         System.out.println(square.getArea());
@@ -17,6 +17,7 @@ public class Main {
         System.out.println(circle.getPerimeter());
         System.out.println(circle.getArea());
         System.out.println(circle.switchColor());
+
 
     }
 }

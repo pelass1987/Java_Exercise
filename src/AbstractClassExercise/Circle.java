@@ -4,10 +4,9 @@ public class Circle extends  Figura {
 
     private static final double piNumber = 3.1415;
 
-
-    public Circle (int site, String color) {
+    public Circle (int site, Colors colors) {
         super.site = site;
-        this.color = color;
+        this.colors = colors;
     }
 
     @Override

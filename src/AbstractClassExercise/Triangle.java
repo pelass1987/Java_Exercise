@@ -4,10 +4,10 @@ public class Triangle extends Figura {
 
     private int triangleHeight;
 
-    public Triangle(int site, int triangleHeight, String color){
+    public Triangle(int site, int triangleHeight, Colors colors){
         super.site = site;
         this.triangleHeight = triangleHeight;
-        this.color = color;
+        this.colors = colors;
     }
 
     @Override

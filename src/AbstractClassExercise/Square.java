@@ -3,9 +3,9 @@ package AbstractClassExercise;
 public class Square extends Figura {
 
 
-    public Square(int site, String color) {
+    public Square(int site, Colors colors) {
         this.site = site;
-        this.color = color;
+        this.colors = colors;
     }
 
     @Override

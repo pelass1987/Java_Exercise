@@ -3,28 +3,26 @@ package AbstractClassExercise;
 abstract class Figura {
 
     public int site;
-    public String color;
+    public Colors colors;
 
     public abstract double getArea();
 
     public abstract double getPerimeter();
 
-    public String switchColor() {
+    public Colors switchColor() {
 
-        switch (color) {
-            case "Green":
-                color = "#44975c";
+        switch (colors) {
+            case GREEN:
+                System.out.println("#v34354");
                 break;
-            case "Blue":
-                color = "#40c0ff";
+            case BLUE:
+                System.out.println("#djrg56");
                 break;
-            case "Red":
-                color = "#ff0000";
+            case RED:
+                System.out.println("#ff0000");
                 break;
-            default:
-                color = "Invalid color";
         }
-        return color;
+        return Colors.valueOf(colors.name());
     }
 }
 
