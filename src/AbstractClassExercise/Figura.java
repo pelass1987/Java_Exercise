@@ -9,20 +9,17 @@ abstract class Figura {
 
     public abstract double getPerimeter();
 
-    public Colors switchColor() {
+    public String switchColor() {
 
         switch (colors) {
             case GREEN:
-                System.out.println("#v34354");
-                break;
+                return "#v34354";
             case BLUE:
-                System.out.println("#djrg56");
-                break;
+                return "#djrg56";
             case RED:
-                System.out.println("#ff0000");
-                break;
+                return "#ff0000";
         }
-        return Colors.valueOf(colors.name());
+        return String.valueOf(colors);
     }
 }
 
